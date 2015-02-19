@@ -140,6 +140,7 @@
     <Compile Include="MpConnection\Messages\MessageDialogResult.cs" />
     <Compile Include="MpConnection\Messages\MessageShowDialog.cs" />
     <Compile Include="MpConnection\Messages\MessageWelcome.cs" />
+    <Compile Include="WCF\CorsBehavior.cs" />
     <Compile Include="WCF\ClientFactory.cs" />
     <Compile Include="WCF\CustomWebHttpBindingElement.cs" />
     <Compile Include="WCF\CustomWebHttpBinding.cs" />

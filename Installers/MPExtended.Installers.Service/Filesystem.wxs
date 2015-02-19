@@ -21,10 +21,9 @@
           <Directory Id="InstallDirectory" Name="Service">
             <!-- General registry (installation path) -->
             <Component Id="Component_General_Registry" Guid="f0f086e4-f8ae-45df-9c68-d4b2e7f45f2a">
-              <RegistryKey Root="HKLM" Key="Software\MPExtended" Action="createAndRemoveOnUninstall">
+              <RegistryKey Root="HKLM" Key="Software\MPExtended" ForceDeleteOnUninstall="yes">
                 <RegistryValue Type="string" Name="ServiceInstallLocation" Value="[MPEXTENDEDDIRECTORY]Service" />
               </RegistryKey>
-              <RemoveRegistryKey Root="HKLM" Key="Software\MPExtended" Action="removeOnUninstall" />
             </Component>
             
             <!-- General libraries -->
@@ -76,7 +75,7 @@
                 
                 <!-- MAS registry -->
                 <Component Id="Component_MAS_Registry" Guid="c9e2ad15-09dd-4f8f-b3be-c24a8cb01379">
-                  <RegistryKey Root="HKLM" Key="Software\MPExtended" Action="createAndRemoveOnUninstall">
+                  <RegistryKey Root="HKLM" Key="Software\MPExtended" ForceDeleteOnUninstall="yes">
                     <RegistryValue Type="string" Name="MediaAccessServiceInstalled" Value="true" />
                   </RegistryKey>
                 </Component>
@@ -99,7 +98,7 @@
                 
                 <!-- TAS registry -->
                 <Component Id="Component_TAS_Registry" Guid="ee36481d-d196-40b5-bac4-0a6100811738">
-                  <RegistryKey Root="HKLM" Key="Software\MPExtended" Action="createAndRemoveOnUninstall">
+                  <RegistryKey Root="HKLM" Key="Software\MPExtended" ForceDeleteOnUninstall="yes">
                     <RegistryValue Type="string" Name="TVAccessServiceInstalled" Value="true" />
                   </RegistryKey>
                 </Component>
@@ -112,7 +111,7 @@
 
                 <!-- USS registry -->
                 <Component Id="Component_USS_Registry" Guid="7ca76699-1f6f-4e64-a5f9-63c2fb65b3d7">
-                  <RegistryKey Root="HKLM" Key="Software\MPExtended" Action="createAndRemoveOnUninstall">
+                  <RegistryKey Root="HKLM" Key="Software\MPExtended" ForceDeleteOnUninstall="yes">
                     <RegistryValue Type="string" Name="UserSessionServiceInstalled" Value="true" />
                   </RegistryKey>
                 </Component>
@@ -128,7 +127,7 @@
 
                 <!-- WSS registry -->
                 <Component Id="Component_WSS_Registry" Guid="6af94ecd-b794-46c6-a780-28d2c0a653eb">
-                  <RegistryKey Root="HKLM" Key="Software\MPExtended" Action="createAndRemoveOnUninstall">
+                  <RegistryKey Root="HKLM" Key="Software\MPExtended" ForceDeleteOnUninstall="yes">
                     <RegistryValue Type="string" Name="StreamingServiceInstalled" Value="true" />
                   </RegistryKey>
                 </Component>
@@ -176,10 +175,9 @@
             </Component>
             
             <Component Id="Component_Configurator_Registry" Guid="5a4072a3-32c2-4482-af07-b9af4e463eaa">
-              <RegistryKey Root="HKLM" Key="Software\MPExtended" Action="createAndRemoveOnUninstall">
+              <RegistryKey Root="HKLM" Key="Software\MPExtended" ForceDeleteOnUninstall="yes">
                 <RegistryValue Type="string" Name="ConfiguratorInstallLocation" Value="[MPEXTENDEDDIRECTORY]Service" />
               </RegistryKey>
-              <RemoveRegistryKey Root="HKLM" Key="Software\MPExtended" Action="removeOnUninstall" />
             </Component>
             
             <Directory Id="Directory_Configurator_Binaries_enUS" Name="en-US">
@@ -224,7 +222,7 @@
       <Directory Id="ProgramMenuFolder">
         <Component Id="Component_Configurator_StartMenu" Guid="369aaf32-18db-4562-bc51-7557f0544ebf">
           <Condition><![CDATA[INSTALLCONFIGURATORSTARTMENU]]></Condition>
-          <Shortcut Id="StartMenuShortcut" Name="!(loc.ConfiguratorShortcutName)" Description="!(loc.ConfiguratorShortcutDescription)"
+          <Shortcut Id="StartMenuShortcut" Name="!(loc.ConfiguratorShortcutName)" Description="!(loc.ConfiguratorShortcutDescription)" 
                     Target="[MPEXTENDEDDIRECTORY]Service\MPExtended.Applications.ServiceConfigurator.exe" WorkingDirectory="MPEXTENDEDDIRECTORY" Icon="MPExtendedIcon" />
           <RegistryValue Root="HKCU" Key="Software\MPExtended" Name="StartMenuShortcut" Type="integer" Value="1" KeyPath="yes" />
         </Component>
@@ -240,7 +238,7 @@
       <Directory Id="DesktopFolder">
         <Component Id="Component_Configurator_Desktop" Guid="956ece35-9156-440a-8e8a-213a1f729d2f">
           <Condition><![CDATA[INSTALLCONFIGURATORDESKTOP]]></Condition>
-          <Shortcut Id="DesktopShortcut" Name="!(loc.ConfiguratorShortcutName)" Description="!(loc.ConfiguratorShortcutDescription)"
+          <Shortcut Id="DesktopShortcut" Name="!(loc.ConfiguratorShortcutName)" Description="!(loc.ConfiguratorShortcutDescription)" 
                     Target="[MPEXTENDEDDIRECTORY]Service\MPExtended.Applications.ServiceConfigurator.exe" WorkingDirectory="MPEXTENDEDDIRECTORY" Icon="MPExtendedIcon" />
           <RegistryValue Root="HKCU" Key="Software\MPExtended" Name="DesktopShortcut" Type="integer" Value="1" KeyPath="yes" />
         </Component>

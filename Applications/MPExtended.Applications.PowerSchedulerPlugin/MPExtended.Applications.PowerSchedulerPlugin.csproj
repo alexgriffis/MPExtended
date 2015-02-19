@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>MPExtended.Applications.PowerSchedulerPlugin</RootNamespace>
     <AssemblyName>MPExtended.Applications.PowerSchedulerPlugin</AssemblyName>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile>
     </TargetFrameworkProfile>
@@ -61,6 +61,10 @@
     <Reference Include="System.Xml" />
     <Reference Include="TvControl">
       <HintPath>..\..\Libraries\TVEngine3\TvControl.dll</HintPath>
+    </Reference>
+    <Reference Include="TVLibrary, Version=1.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libraries\TVEngine3\TVLibrary.dll</HintPath>
     </Reference>
     <Reference Include="TvLibrary.Interfaces">
       <HintPath>..\..\Libraries\TVEngine3\TvLibrary.Interfaces.dll</HintPath>

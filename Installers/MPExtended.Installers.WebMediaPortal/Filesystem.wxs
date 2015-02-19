@@ -20,7 +20,7 @@
           <Directory Id="InstallDirectory" Name="WebMediaPortal">
             <!-- General registry (installation path) -->
             <Component Id="Component_Registry" Guid="76089ff3-ddd3-4370-b2b8-d57de76b238e">
-              <RegistryKey Root="HKLM" Key="Software\MPExtended" Action="createAndRemoveOnUninstall">
+              <RegistryKey Root="HKLM" Key="Software\MPExtended" ForceDeleteOnUninstall="yes">
                 <RegistryValue Type="string" Name="WebMediaPortalInstallLocation" Value="[MPEXTENDEDDIRECTORY]WebMediaPortal" />
               </RegistryKey>
             </Component>
