@@ -104,6 +104,7 @@ namespace MPExtended.Tests.Libraries.Service.Config.Tests
             
             Assert.Equal("en", Configuration.Streaming.DefaultAudioStream);
             Assert.Equal("first", Configuration.Streaming.DefaultSubtitleStream);
+            Assert.False(Configuration.Streaming.HideSubtitlesWhenSameLanguage);
         }
 
         [Fact]

@@ -87,6 +87,11 @@
     <Compile Include="Config\InstallationProperties.cs" />
     <Compile Include="Composition\AssemblyLoader.cs" />
     <Compile Include="Extensions\ByteArrayExtensionMethods.cs" />
+    <Compile Include="Strings\UI.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UI.resx</DependentUpon>
+    </Compile>
     <Compile Include="Util\ProcessUtils.cs" />
     <Compile Include="Network\ImpersonationContext.cs" />
     <Compile Include="Network\INetworkContext.cs" />
@@ -122,11 +127,6 @@
     <Compile Include="Shared\Filters\FilterParser.cs" />
     <Compile Include="Shared\Filters\Tokenizer.cs" />
     <Compile Include="Shared\Filters\Tokens.cs" />
-    <Compile Include="Strings\UI.Designer.cs">
-      <DependentUpon>UI.resx</DependentUpon>
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <Compile Include="Util\Encryption.cs" />
     <Compile Include="Util\EqualityComparer.cs" />
     <Compile Include="Network\ExternalAddress.cs" />
@@ -215,8 +215,8 @@
     <EmbeddedResource Include="Strings\UI.no.resx" />
     <EmbeddedResource Include="Strings\UI.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>UI.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>UI.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Strings\UI.sk.resx" />
     <EmbeddedResource Include="Strings\UI.sl.resx" />

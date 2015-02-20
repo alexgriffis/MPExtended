@@ -20,4 +20,5 @@
 
   <DefaultAudioStream>en</DefaultAudioStream>
   <DefaultSubtitleStream>none</DefaultSubtitleStream>
+  <HideSubtitlesWhenSameLanguage>false</HideSubtitlesWhenSameLanguage>
 </Streaming>

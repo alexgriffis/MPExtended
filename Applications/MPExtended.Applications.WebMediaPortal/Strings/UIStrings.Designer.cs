@@ -446,7 +446,15 @@ namespace MPExtended.Applications.WebMediaPortal.Strings {
                 return ResourceManager.GetString("GuestStarring", resourceCulture);
             }
         }
-        
+        /// <summary>
+        ///   Looks up a localized string similar to Hide subtitles when same as audio language.
+        /// </summary>
+        public static string HideSubtitlesWhenSameLanguage {
+            get
+            {
+                return ResourceManager.GetString("HideSubtitlesWhenSameLanguage", resourceCulture);
+            }
+        }
         /// <summary>
         ///   Looks up a localized string similar to Home.
         /// </summary>

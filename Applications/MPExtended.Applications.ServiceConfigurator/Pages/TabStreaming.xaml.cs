@@ -65,6 +65,7 @@ namespace MPExtended.Applications.ServiceConfigurator.Pages
             // set default item
             cbAudio.SelectedValue = Configuration.Streaming.DefaultAudioStream;
             cbSubtitle.SelectedValue = Configuration.Streaming.DefaultSubtitleStream;
+            cbHideOnSame.IsChecked = Configuration.Streaming.HideSubtitlesWhenSameLanguage;
         }
 
 
@@ -72,6 +73,7 @@ namespace MPExtended.Applications.ServiceConfigurator.Pages
         {
             Configuration.Streaming.DefaultAudioStream = (string)cbAudio.SelectedValue;
             Configuration.Streaming.DefaultSubtitleStream = (string)cbSubtitle.SelectedValue;
+            Configuration.Streaming.HideSubtitlesWhenSameLanguage = cbHideOnSame.IsChecked.GetValueOrDefault(true);
             Configuration.Save();
         }
     }

@@ -147,6 +147,9 @@
   <data name="ExportLogsAndConfiguration" xml:space="preserve">
     <value>Export logs and configuration</value>
   </data>
+  <data name="HideSubtitlesWhenSameLanguage" xml:space="preserve">
+    <value>Hide subtitles when same as audio language</value>
+  </data>
   <data name="LoginFailed" xml:space="preserve">
     <value>Login failed.</value>
   </data>
@@ -212,7 +215,7 @@
   </data>
   <data name="SubtitlesFirstStream" xml:space="preserve">
     <value>First stream in file</value>
-  </data>
+  </data>>
   <data name="TabAuthentication" xml:space="preserve">
     <value>Authentication</value>
   </data>

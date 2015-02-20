@@ -17,6 +17,7 @@
   <defaultStreams>
     <audio>en</audio>
     <subtitle>first</subtitle>
+    <hideOnSame>false</hideOnSame>
   </defaultStreams>
 
   <transcoders>

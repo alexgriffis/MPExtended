@@ -16,5 +16,6 @@
         <ComboBox Height="23" HorizontalAlignment="Stretch" Margin="255,105,12,0" Name="cbAudio" VerticalAlignment="Top" ItemsSource="{Binding}" DisplayMemberPath="Value" SelectedValuePath="Key" />
         <Label Content="{x:Static strings:UI.DefaultSubtitleLanguage}" Height="28" HorizontalAlignment="Left" Margin="12,137,0,0" Name="lblDefaultSubtitle" VerticalAlignment="Top" />
         <ComboBox Height="23" HorizontalAlignment="Stretch" Margin="255,139,12,0" Name="cbSubtitle" VerticalAlignment="Top" ItemsSource="{Binding}" DisplayMemberPath="Value" SelectedValuePath="Key" />
+        <CheckBox Content="{x:Static strings:UI.HideSubtitlesWhenSameLanguage}" Height="16" HorizontalAlignment="Left" Margin="18,171,0,0" Name="cbHideOnSame" VerticalAlignment="Top" />
     </Grid>
 </Page>

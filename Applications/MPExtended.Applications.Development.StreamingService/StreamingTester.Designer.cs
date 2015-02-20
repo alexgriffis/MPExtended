@@ -56,6 +56,7 @@
             this.cbLanguage = new System.Windows.Forms.ComboBox();
             this.cbProfiles = new System.Windows.Forms.ComboBox();
             this.cbSubtitle = new System.Windows.Forms.ComboBox();
+            this.cbHideOnSame = new System.Windows.Forms.CheckBox();
             this.cmdInitIdTypeStreaming = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -455,6 +456,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cmdInitIdTypeStreaming);
             this.Controls.Add(this.cbSubtitle);
+            this.Controls.Add(this.cbHideOnSame);
             this.Controls.Add(this.cbProfiles);
             this.Controls.Add(this.cbLanguage);
             this.Controls.Add(this.cbStartAutoPlayback);
@@ -518,6 +520,7 @@
         private System.Windows.Forms.ComboBox cbLanguage;
         private System.Windows.Forms.ComboBox cbProfiles;
         private System.Windows.Forms.ComboBox cbSubtitle;
+        private System.Windows.Forms.CheckBox cbHideOnSame;
         private System.Windows.Forms.Button cmdInitIdTypeStreaming;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;

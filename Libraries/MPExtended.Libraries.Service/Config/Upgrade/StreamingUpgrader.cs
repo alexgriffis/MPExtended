@@ -34,6 +34,7 @@ namespace MPExtended.Libraries.Service.Config.Upgrade
 
             model.DefaultAudioStream = file.Element("defaultStreams").Element("audio").Value;
             model.DefaultSubtitleStream = file.Element("defaultStreams").Element("subtitle").Value;
+            model.HideSubtitlesWhenSameLanguage = file.Element("defaultStreams").Element("hideOnSame").Value == "true";
 
             model.TVLogoDirectory = TransformationCallbacks.FolderSubstitution(file.Element("tvLogoDirectory").Value);
 

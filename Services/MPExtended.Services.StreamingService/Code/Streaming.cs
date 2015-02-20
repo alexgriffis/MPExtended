@@ -234,7 +234,13 @@ namespace MPExtended.Services.StreamingService.Code
                     else if (subtitleId == STREAM_DEFAULT)
                     {
                         string preferredLanguage = Configuration.Streaming.DefaultSubtitleStream;
-                        if (stream.Context.MediaInfo.SubtitleStreams.Any(x => x.Language == preferredLanguage))
+                        string preferredAudioLanguage = Configuration.Streaming.DefaultAudioStream;
+                        bool hideSubtitlesWhenSameLanguage = Configuration.Streaming.HideSubtitlesWhenSameLanguage;
+                        
+                        if (stream.Context.MediaInfo.AudioStreams.Any(x => x.Language == preferredAudioLanguage && preferredAudioLanguage == preferredLanguage && hideSubtitlesWhenSameLanguage))
+                        {
+                        }
+                        else if (stream.Context.MediaInfo.SubtitleStreams.Any(x => x.Language == preferredLanguage))
                         {
                             stream.Context.SubtitleTrackId = stream.Context.MediaInfo.SubtitleStreams.First(x => x.Language == preferredLanguage).ID;
                         }

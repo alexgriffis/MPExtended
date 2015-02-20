@@ -50,6 +50,8 @@ namespace MPExtended.Libraries.Service.Config
         
         public string DefaultAudioStream { get; set; }       
         public string DefaultSubtitleStream { get; set; }
+        public bool HideSubtitlesWhenSameLanguage { get; set; }
+
         
         public string TVLogoDirectory { get; set; }
         public WatchSharingConfiguration WatchSharing { get; set; }
