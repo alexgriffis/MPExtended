@@ -105,7 +105,7 @@ namespace MPExtended.Libraries.Service.Hosting
                         else if (endpoint.Binding is WebHttpBinding)
                         {
                             ((WebHttpBinding)endpoint.Binding).Security.Mode = WebHttpSecurityMode.TransportCredentialOnly;
-                            ((WebHttpBinding)endpoint.Binding).Security.Transport.ClientCredentialType = HttpClientCredentialType.Basic;
+                            ((WebHttpBinding)endpoint.Binding).Security.Transport.ClientCredentialType = HttpClientCredentialType.None;
                         }
                     }
                 }

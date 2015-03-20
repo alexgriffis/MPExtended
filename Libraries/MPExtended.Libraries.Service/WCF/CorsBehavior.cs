@@ -65,7 +65,7 @@ namespace MPExtended.Libraries.Service.WCF
             var requiredHeaders = new Dictionary<string, string>();
 
             requiredHeaders.Add("Access-Control-Allow-Origin", "*");
-            requiredHeaders.Add("Access-Control-Request-Method", "POST,GET,PUT,DELETE,OPTIONS");
+            requiredHeaders.Add("Access-Control-Request-Method", "GET,OPTIONS");
             requiredHeaders.Add("Access-Control-Allow-Headers", "X-Requested-With,Content-Type");
 
             endpointDispatcher.DispatchRuntime.MessageInspectors.Add(new CorsMessageInspector(requiredHeaders));

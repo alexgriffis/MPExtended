@@ -96,7 +96,7 @@ namespace MPExtended.Services.MediaAccessService
                     case WebSortField.Genre:
                         return list.OrderBy(x => ((IGenreSortable)x).Genres.First(), order);
                     case WebSortField.Rating:
-                        return list.OrderBy(x => ((IRatingSortable)x).Rating, order);
+                        return list.OrderBy(x => ((IRatingSortable)x) != null ? ((IRatingSortable)x).Rating : float.MinValue, order);
                     case WebSortField.Categories:
                         return list.OrderBy(x => ((ICategorySortable)x).Categories.First().Title, order);
                     case WebSortField.Type:
