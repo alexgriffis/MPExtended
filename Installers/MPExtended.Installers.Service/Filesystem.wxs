@@ -82,6 +82,7 @@
 
                 <!-- TAS -->
                 <Component Id="Component_TAS_Binaries" Guid="6185c32a-a5ef-4727-bea8-ebd6547726cb">
+                  <File Source="$(var.MPExtended.Services.TVAccessService.TargetDir)\Common.Utils.dll" />
                   <File Source="$(var.MPExtended.Services.TVAccessService.TargetDir)\Gentle.Common.dll" />
                   <File Source="$(var.MPExtended.Services.TVAccessService.TargetDir)\Gentle.Framework.dll" />
                   <File Source="$(var.MPExtended.Services.TVAccessService.TargetDir)\Gentle.Provider.MySQL.dll" />
